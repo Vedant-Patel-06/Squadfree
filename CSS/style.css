@@ -663,6 +663,11 @@ html{
 .team-info i{
     color: #49788c;
     padding: 0 2px;
+    transition: all 0.3s;
+    font-size: 17px;
+}
+.team-content .team-info i:hover{
+    color: var(--text-4);
 }
 
 /* Contact Section */
