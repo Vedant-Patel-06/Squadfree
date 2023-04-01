@@ -150,12 +150,14 @@ ul,ol {
 .contact-padding{
     padding: 60px 0 65px 0;
 }
-
+section{
+    overflow: hidden;
+}
 /* header css */
 
-header .logo a{
+header .logo span{
     font-size: 24px;
-    font-weight: 900;
+    font-weight: 700;
 }
 header{
     background-color: #378eb5e6;
@@ -250,6 +252,7 @@ header ul li .megamenu li:hover > a{
 /* Banner section */
 .banner-bg{
     background-image: url(../img/hero-bg.jpg);
+    height: 100vh;
 }
 .banner-bg h1{
     font-size: 64px; 
@@ -259,6 +262,7 @@ header ul li .megamenu li:hover > a{
 .banner-overlay{
     background-color: #49788c27;
     padding: 160px 0px;
+    height: 100vh;
 }
 .banner-bg i{
     margin-top: 60px;
@@ -391,6 +395,12 @@ header ul li .megamenu li:hover > a{
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     padding: 30px;
+}
+.content .animate__delay-1_7s{
+    animation-delay: 1s;
+    animation-delay: 1.5s;
+    animation-delay: 2s;
+
 }
 .content i{
     font-size: 48px;
