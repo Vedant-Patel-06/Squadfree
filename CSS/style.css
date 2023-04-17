@@ -172,7 +172,7 @@ header nav > ul > li > a{
     transition: all 0.5s;
 }
 header nav ul li:hover a{
-    background-color: #ffffff;   
+    background-color: #ffffff5f;   
     color: var(--content);
 } 
 header .Dropdown{
@@ -210,6 +210,7 @@ header .Dropdown .deep{
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s;
+    background-color: var(--white);
 }
 header .Dropdown li:hover .deep{
     opacity: 1;
@@ -247,6 +248,11 @@ header ul li:hover .megamenu{
 }
 header ul li .megamenu li:hover > a{
     color: var(--head);
+}
+.toggle-menu i{
+    color: var(--white);
+    font-size: 25px;
+    display: none;
 }
 
 /* Banner section */
@@ -334,13 +340,13 @@ header ul li .megamenu li:hover > a{
     color: var(--content);
     font-family: 'Raleway';
 }
-.about-bg .w-30 i{
+.about-bg .a-us i{
     font-size: 35px;
     color: var(--head);
     margin-bottom: 15px;
 
 }
-.about-bg .w-30 p{
+.about-bg .a-us p{
     font-size: 15px;
     font-family: 'Open Sans';
     font-weight: 400;
@@ -549,13 +555,17 @@ html{
     width: 50%;
     text-align: center;
     padding: 15px;
+    transition: all 0.5s;
 }
 .image-box .icon-box{
     position: absolute;
     content: "";
     width: 100%;
-    bottom: -20%;
+    bottom: -30%;
     transition: all 0.5s;
+}
+.image-box .icon-box .w-50{
+    transition: all 0.s;
 }
 .image-box:hover .icon-box{
     bottom: 0;
