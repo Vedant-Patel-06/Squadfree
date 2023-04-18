@@ -358,8 +358,8 @@ header ul li .megamenu li:hover > a{
 /* Services section */
 
 .u-title{
-    position: relative;
     padding: 35px 0;
+    position: relative;
 }
  .u-title h1{
     font-size: 32px;
@@ -375,7 +375,7 @@ header ul li .megamenu li:hover > a{
 .u-title::after{
     position: absolute;
     content: '';
-    background-image: url(../img/section-title-bg.png);
+    /* background-image: url(../img/section-title-bg.png); */
     background-repeat: no-repeat;
     width: 20%;
     height: 100%;
