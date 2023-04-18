@@ -32,6 +32,9 @@
     .portfolio-section .u-title::after,.service-box .u-title::after{
         top: -102px;
     }
+    .team-content{
+        padding: 30px 0;
+    }
 
 }
 @media (min-width:576px) and (max-width:767px){
