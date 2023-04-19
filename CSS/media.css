@@ -120,6 +120,12 @@
     .Testimonials-section .u-title::after,.Team .u-title::after,.contact-section .u-title::after{
         top: -47px;
     }
+    .toggle-menu i{
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
 }
 @media (min-width:1200px){
     /* xl */
