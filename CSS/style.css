@@ -936,6 +936,7 @@ html{
     left: 0;
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
+    z-index: 9999;
   }
   
   .cursor2 {
@@ -948,11 +949,13 @@ html{
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
+    z-index: 9999;
   }
   
   .hover {
     background-color: red;
     opacity: 0.5;
+    z-index: 9999;
   }
   
   .cursorinnerhover {
