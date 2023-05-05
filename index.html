@@ -1,748 +1,1078 @@
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Squadfree</title>
-    <link rel="stylesheet" href="CSS/animate.min.css">
+    <link rel="stylesheet" href="CSS/animate.min.css" />
     <link rel="stylesheet" href="CSS/all.min.css" />
     <link rel="stylesheet" href="CSS/fonts.css" />
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="CSS/owl.theme.default.min.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/media.css">
-</head>
+    <link rel="stylesheet" href="CSS/media.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Color Changer -->
+    <div class="setting-box">
+      <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
+    </div>
+    <div class="color-box">
+      <div class="color-green"></div>
+    </div>
     <!-- Back to Top -->
     <a class="btp" href="#">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </a>
+    <!-- Pointer js -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <!-- header -->
     <header>
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="logo">
-                    <a href="#" class="open white"><span>SQUADFREE</span></a>
-                </div>
-                <div class="toggle-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <nav>
-                    <ul class="row raleway f-16">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li>
-                            <a href="#">Dropdown <i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="Dropdown">
-                                <li><a href="#">Dropdown 1</a></li>
-                                <li>
-                                    <a href="#">Dropdown Deep <i class="fa-solid fa-chevron-right"></i></a>
-                                    <ul class="deep">
-                                        <li><a href="#">Deep Dropdown 1</a></li>
-                                        <li><a href="#">Deep Dropdown 2</a></li>
-                                        <li><a href="#">Deep Dropdown 3</a></li>
-                                        <li><a href="#">Deep Dropdown 4</a></li>
-                                        <li><a href="#">Deep Dropdown 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Dropdown 2</a></li>
-                                <li><a href="#">Dropdown 3</a></li>
-                                <li><a href="#">Dropdown 4</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Mega Menu <i class="fa-solid fa-chevron-down"></i></a>
-                            <div class="megamenu raleway">
-                                <div class="row">
-                                    <div class="w-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                                <h4 class="open">Column 1</h4>
-                                            </li>
-                                            <li><a href="#">Column 1 Link 1</a></li>
-                                            <li><a href="#">Column 1 Link 2</a></li>
-                                            <li><a href="#">Column 1 Link 3</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="w-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                                <h4 class="open">Column 2</h4>
-                                            </li>
-                                            <li><a href="#">Column 2 Link 1</a></li>
-                                            <li><a href="#">Column 2 Link 2</a></li>
-                                            <li><a href="#">Column 2 Link 3</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="w-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                                <h4 class="open">Column 3</h4>
-                                            </li>
-                                            <li><a href="#">Column 3 Link 1</a></li>
-                                            <li><a href="#">Column 3 Link 2</a></li>
-                                            <li><a href="#">Column 3 Link 3</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="w-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                                <h4 class="open">Column 4</h4>
-                                            </li>
-                                            <li><a href="#">Column 4 Link 1</a></li>
-                                            <li><a href="#">Column 4 Link 2</a></li>
-                                            <li><a href="#">Column 4 Link 3</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="w-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#"></a>
-                                                <h4 class="open">Column 5</h4>
-                                            </li>
-                                            <li><a href="#">Column 5 Link 1</a></li>
-                                            <li><a href="#">Column 5 Link 2</a></li>
-                                            <li><a href="#">Column 5 Link 3</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li><a href="#">Contact</a></li>
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="logo">
+            <a href="#" class="open white"><span>SQUADFREE</span></a>
+          </div>
+          <div class="toggle-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <nav>
+            <ul class="row raleway f-16">
+              <li><a href="#">home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Team</a></li>
+              <li>
+                <a href="#"
+                  >Dropdown <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="Dropdown">
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li>
+                    <a href="#"
+                      >Dropdown Deep <i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                    <ul class="deep">
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
                     </ul>
-                </nav>
-            </div>
+                  </li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li><a href="#">Dropdown 3</a></li>
+                  <li><a href="#">Dropdown 4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"
+                  >Mega Menu <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div class="megamenu raleway">
+                  <div class="row">
+                    <div class="w-20">
+                      <ul>
+                        <li>
+                          <a href="#"></a>
+                          <h4 class="open">Column 1</h4>
+                        </li>
+                        <li><a href="#">Column 1 Link 1</a></li>
+                        <li><a href="#">Column 1 Link 2</a></li>
+                        <li><a href="#">Column 1 Link 3</a></li>
+                      </ul>
+                    </div>
+                    <div class="w-20">
+                      <ul>
+                        <li>
+                          <a href="#"></a>
+                          <h4 class="open">Column 2</h4>
+                        </li>
+                        <li><a href="#">Column 2 Link 1</a></li>
+                        <li><a href="#">Column 2 Link 2</a></li>
+                        <li><a href="#">Column 2 Link 3</a></li>
+                      </ul>
+                    </div>
+                    <div class="w-20">
+                      <ul>
+                        <li>
+                          <a href="#"></a>
+                          <h4 class="open">Column 3</h4>
+                        </li>
+                        <li><a href="#">Column 3 Link 1</a></li>
+                        <li><a href="#">Column 3 Link 2</a></li>
+                        <li><a href="#">Column 3 Link 3</a></li>
+                      </ul>
+                    </div>
+                    <div class="w-20">
+                      <ul>
+                        <li>
+                          <a href="#"></a>
+                          <h4 class="open">Column 4</h4>
+                        </li>
+                        <li><a href="#">Column 4 Link 1</a></li>
+                        <li><a href="#">Column 4 Link 2</a></li>
+                        <li><a href="#">Column 4 Link 3</a></li>
+                      </ul>
+                    </div>
+                    <div class="w-20">
+                      <ul>
+                        <li>
+                          <a href="#"></a>
+                          <h4 class="open">Column 5</h4>
+                        </li>
+                        <li><a href="#">Column 5 Link 1</a></li>
+                        <li><a href="#">Column 5 Link 2</a></li>
+                        <li><a href="#">Column 5 Link 3</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <!-- Banner Section -->
     <section class="banner-bg white text-align-center">
-        <div class="banner-overlay">
-            <div class="container raleway wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
-                <h1>WELCOME TO SQUAD</h1>
-                <p class="f-20">
-                    WE ARE TEAM OF TALENTED DESIGNERS MAKING WEBSITES WITH BOOTSTRAP
-                </p>
-                <i class="fa-solid fa-angles-down"></i>
-            </div>
+      <div class="banner-overlay">
+        <div
+          class="container raleway wow animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+        >
+          <h1>WELCOME TO SQUAD</h1>
+          <p class="f-20">
+            WE ARE TEAM OF TALENTED DESIGNERS MAKING WEBSITES WITH BOOTSTRAP
+          </p>
+          <i class="fa-solid fa-angles-down"></i>
         </div>
+      </div>
     </section>
     <!-- About Us Section -->
     <section class="about-bg">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12 raleway">
-                    <div
-                        class="about-animate wow animate__animated animate__fadeInUp animate__delay-0.5s animate__slow">
-                        <h3 class="f-34">Voluptatem dignissimos provident quasi</h3>
-                        <p class="open f-16">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
-                            aute irure dolor in reprehenderit
-                        </p>
-                        <button class="us open f-16">
-                            About us<i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 a-us">
-                    <div
-                        class="about-content wow animate__animated animate__fadeInUp animate__delay-0.5s animate__slow">
-                        <i class="fa-solid fa-receipt"></i>
-                        <h4 class="common-pty">Corporis voluptates sit</h4>
-                        <p>
-                            Consequuntur sunt aut quasi enim aliquam quae harum pariatur
-                            laboris nisi ut aliquip
-                        </p>
-                    </div>
-                    <div class="about-content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
-                        <i class="fa-solid fa-images"></i>
-                        <h4 class="common-pty">Labore consequatur</h4>
-                        <p>
-                            Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
-                            maiores omnis facere
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 a-us">
-                    <div
-                        class="about-content wow animate__animated animate__fadeInUp animate__delay-0.5s animate__slow">
-                        <i class="fa-solid fa-cube"></i>
-                        <h4 class="common-pty">Ullamco laboris nisi</h4>
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                            qui officia deserunt
-                        </p>
-                    </div>
-                    <div class="about-content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <h4 class="common-pty">Beatae veritatis</h4>
-                        <p>
-                            Expedita veritatis consequuntur nihil tempore laudantium vitae
-                            denat pacta
-                        </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-xs-12 raleway">
+            <div
+              class="about-animate wow animate__animated animate__fadeInUp animate__delay-0.5s animate__slow"
+            >
+              <h3 class="f-34">Voluptatem dignissimos provident quasi</h3>
+              <p class="open f-16">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit
+              </p>
+              <button class="us open f-16">
+                About us<i class="fa-solid fa-chevron-right"></i>
+              </button>
             </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 a-us">
+            <div
+              class="about-content wow animate__animated animate__fadeInUp animate__delay-0.5s animate__slow"
+            >
+              <i class="fa-solid fa-receipt"></i>
+              <h4 class="common-pty">Corporis voluptates sit</h4>
+              <p>
+                Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                laboris nisi ut aliquip
+              </p>
+            </div>
+            <div
+              class="about-content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+            >
+              <i class="fa-solid fa-images"></i>
+              <h4 class="common-pty">Labore consequatur</h4>
+              <p>
+                Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                maiores omnis facere
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 a-us">
+            <div
+              class="about-content wow animate__animated animate__fadeInUp animate__delay-0.5s animate__slow"
+            >
+              <i class="fa-solid fa-cube"></i>
+              <h4 class="common-pty">Ullamco laboris nisi</h4>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt
+              </p>
+            </div>
+            <div
+              class="about-content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+            >
+              <i class="fa-solid fa-shield-halved"></i>
+              <h4 class="common-pty">Beatae veritatis</h4>
+              <p>
+                Expedita veritatis consequuntur nihil tempore laudantium vitae
+                denat pacta
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Service Section -->
     <section class="class padding-40">
-        <div class="container">
-            <div class="row">
-                <div class="service-box">
-                    <div class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s">
-                        <h1>Services</h1>
-                        <p>
-                            Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                            ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                            quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                            Quia fugiat sit in iste officiis commodi quidem hic quas.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                            <div
-                                class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
-                                <i class="fa-brands fa-dribbble"></i>
-                                <h3 class="f-18 raleway">Lorem Ipsum</h3>
-                                <p class="f-15 open">
-                                    Voluptatum delenit atque corrupti quos dolores et quas
-                                    molestias excepturi
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                            <div
-                                class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
-                                <i class="fa-regular fa-file-lines"></i>
-                                <h3 class="f-18 raleway">Sed ut perspiciatis</h3>
-                                <p class="f-15 open">
-                                    Duis aute irure dolor in reprehenderit in voluptat velit
-                                    esse dolore
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                            <div
-                                class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
-                                <i class="fa-solid fa-gauge-high"></i>
-                                <h3 class="f-18 raleway">Magni Dolores</h3>
-                                <p class="f-15 open">
-                                    Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                            <div
-                                class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
-                                <i class="fa-solid fa-earth-americas"></i>
-                                <h3 class="f-18 raleway">Nemo Enim</h3>
-                                <p class="f-15 open">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus
-                                    qui blanditiis
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="service-box">
+            <div
+              class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s"
+            >
+              <h1>Services</h1>
+              <p>
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </p>
             </div>
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div
+                  class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+                >
+                  <i class="fa-brands fa-dribbble"></i>
+                  <h3 class="f-18 raleway">Lorem Ipsum</h3>
+                  <p class="f-15 open">
+                    Voluptatum delenit atque corrupti quos dolores et quas
+                    molestias excepturi
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div
+                  class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+                >
+                  <i class="fa-regular fa-file-lines"></i>
+                  <h3 class="f-18 raleway">Sed ut perspiciatis</h3>
+                  <p class="f-15 open">
+                    Duis aute irure dolor in reprehenderit in voluptat velit
+                    esse dolore
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div
+                  class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+                >
+                  <i class="fa-solid fa-gauge-high"></i>
+                  <h3 class="f-18 raleway">Magni Dolores</h3>
+                  <p class="f-15 open">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div
+                  class="content wow animate__animated animate__fadeInUp animate__delay-1s animate__slow"
+                >
+                  <i class="fa-solid fa-earth-americas"></i>
+                  <h3 class="f-18 raleway">Nemo Enim</h3>
+                  <p class="f-15 open">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Counter Section -->
     <section class="counter-section padding-60-20">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <div class="counter-box">
-                        <div class="flex">
-                            <i class="fa-regular fa-face-smile-wink"></i>
-                            <div class="counter-content">
-                                <h3 class="open f-48">232</h3>
-                                <p class="raleway f-14"><span class="row">Happy Clients</span>consequuntur quae</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="counter-box">
+              <div class="flex">
+                <i class="fa-regular fa-face-smile-wink"></i>
+                <div class="counter-content">
+                  <h3 class="open f-48 timer count-title count-number" data-to="232" data-speed="3000">232</h3>
+                  <p class="raleway f-14">
+                    <span class="row">Happy Clients</span>consequuntur quae
+                  </p>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <div class="counter-box">
-                        <div class="flex">
-                            <i class="fa-solid fa-book"></i>
-                            <div class="counter-content">
-                                <h3 class="open f-48">521</h3>
-                                <p class="raleway f-14"><span>Projects</span> adipisci atque cum quia aut</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <div class="counter-box">
-                        <div class="flex">
-                            <i class="fa-solid fa-headset"></i>
-                            <div class="counter-content">
-                                <h3 class="open f-48">1463</h3>
-                                <p class="raleway f-14"><span class="row">Hours Of Support</span>consequuntur quae</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <div class="counter-box">
-                        <div class="flex">
-                            <i class="fa-solid fa-user-group"></i>
-                            <div class="counter-content">
-                                <h3 class="open f-48">15</h3>
-                                <p class="raleway f-14"><span>Hard Workers</span> rerum asperiores dolor</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="counter-box">
+              <div class="flex">
+                <i class="fa-solid fa-book"></i>
+                <div class="counter-content">
+                  <h3 class="open f-48 timer count-title count-number" data-to="521" data-speed="3000">521</h3>
+                  <p class="raleway f-14">
+                    <span>Projects</span> adipisci atque cum quia aut
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="counter-box">
+              <div class="flex">
+                <i class="fa-solid fa-headset"></i>
+                <div class="counter-content">
+                  <h3 class="open f-48 timer count-title count-number" data-to="1463" data-speed="3000">1463</h3>
+                  <p class="raleway f-14">
+                    <span class="row">Hours Of Support</span>consequuntur quae
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="counter-box">
+              <div class="flex">
+                <i class="fa-solid fa-user-group"></i>
+                <div class="counter-content">
+                  <h3 class="open f-48 timer count-title count-number" data-to="15" data-speed="3000">15</h3>
+                  <p class="raleway f-14">
+                    <span>Hard Workers</span> rerum asperiores dolor
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Action Section -->
     <section class="action padding-40">
-        <div class="container">
-            <div class="action-content text-align-center wow animate__animated animate__zoomIn animate__delay-1s">
-                <h3 class="raleway f-28">Call To Action</h3>
-                <p class=" open f-16"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
-                <a href="#" class="act-btn raleway f-16">Call To Action</a>
-            </div>
+      <div class="container">
+        <div
+          class="action-content text-align-center wow animate__animated animate__zoomIn animate__delay-1s"
+        >
+          <h3 class="raleway f-28">Call To Action</h3>
+          <p class="open f-16">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <a href="#" class="act-btn raleway f-16">Call To Action</a>
         </div>
+      </div>
     </section>
     <!-- Portfolio Section -->
     <section class="portfolio-section padding-40">
-        <div class="container">
-            <div class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s">
-                <h1>Portfolio</h1>
-                <p>
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-                    aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-                    quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
-            </div>
-            <div class="portfolio-title">
-                <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-xs-12 w-33">
-                    <ul class="row justify-content-between open f-14">
-                        <li>
-                            <a href="#" class="all">ALL</a>
-                        </li>
-                        <li>
-                            <a href="#">APP</a>
-                        </li>
-                        <li>
-                            <a href="#">CARD</a>
-                        </li>
-                        <li>
-                            <a href="#">WEB</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="image-main-box wow animate__animated animate__fadeInUp animate__delay-1s">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-1.jpg" alt="" class="port"/>
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-2.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-3.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-4.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-5.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-6.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-7.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-8.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="image-box">
-                            <img src="img/portfolio-9.jpg" alt="" />
-                            <div class="icon-box row">
-                                <div class="w-50">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                                <div class="w-50">
-                                    <i class="fa-solid fa-link"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s"
+        >
+          <h1>Portfolio</h1>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
         </div>
+        <div class="portfolio-title">
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-7 col-xs-12 w-33">
+            <ul class="row justify-content-between open f-14">
+              <li>
+                <a href="#" class="all">ALL</a>
+              </li>
+              <li>
+                <a href="#">APP</a>
+              </li>
+              <li>
+                <a href="#">CARD</a>
+              </li>
+              <li>
+                <a href="#">WEB</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="image-main-box wow animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-1.jpg" alt="" class="port" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-2.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-3.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-4.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-5.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-6.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-7.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-8.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="image-box">
+                <img src="img/portfolio-9.jpg" alt="" />
+                <div class="icon-box row">
+                  <div class="w-50">
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                  <div class="w-50">
+                    <i class="fa-solid fa-link"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Testimonials Section -->
     <section class="Testimonials-section padding-testimonials">
-        <div class="container">
-            <div class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s">
-                <h1>Testimonials</h1>
-                <p>
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-                    aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-                    quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
-            </div>
-            <div class="testimonials-content wow animate__animated animate__fadeInUp animate__delay-1s">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div class="content-box">
-                            <p class="open f-16"><i class="fa-solid fa-quote-left"></i>
-                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                risus at semper.<i class="fa-solid fa-quote-right"></i>
-                            </p>
-                        </div>
-                        <div class="t-img-box">
-                            <img src="img/testimonials-1.jpg" alt="">
-                            <h3 class="raleway f-18">Saul Goodman</h3>
-                            <h4 class="raleway f-14">Ceo & Founder</h4>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div class="content-box text-align-center">
-                            <p class="open f-16"><i class="fa-solid fa-quote-left"></i>
-
-                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
-                                legam anim culpa.
-                                <i class="fa-solid fa-quote-right"></i>
-                            </p>
-                        </div>
-                        <div class="t-img-box">
-                            <img src="img/testimonials-2.jpg" alt="">
-                            <h3 class="raleway f-18">Sara Wilsson</h3>
-                            <h4 class="raleway f-14">Designer</h4>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                        <div class="content-box">
-                            <p class="open f-16"><i class="fa-solid fa-quote-left"></i>
-                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                                duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                                <i class="fa-solid fa-quote-right"></i>
-                            </p>
-                        </div>
-                        <div class="t-img-box">
-                            <img src="img/testimonials-3.jpg" alt="">
-                            <h3 class="raleway f-18">Jena Karlis</h3>
-                            <h4 class="raleway f-14">Store Owner</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s"
+        >
+          <h1>Testimonials</h1>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
         </div>
+        <div
+          class="testimonials-content wow animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          <div class="row">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="content-box">
+                  <p class="open f-16">
+                    <i class="fa-solid fa-quote-left"></i> Proin iaculis purus
+                    consequat sem cure digni ssim donec porttitora entum
+                    suscipit rhoncus. Accusantium quam, ultricies eget id,
+                    aliquam eget nibh et. Maecen aliquam, risus at semper.<i
+                      class="fa-solid fa-quote-right"
+                    ></i>
+                  </p>
+                </div>
+                <div class="t-img-box">
+                  <img src="img/testimonials-1.jpg" alt="" />
+                  <h3 class="raleway f-18">Saul Goodman</h3>
+                  <h4 class="raleway f-14">Ceo & Founder</h4>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content-box text-align-center">
+                  <p class="open f-16">
+                    <i class="fa-solid fa-quote-left"></i>
+
+                    Export tempor illum tamen malis malis eram quae irure esse
+                    labore quem cillum quid cillum eram malis quorum velit fore
+                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                    culpa.
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="t-img-box">
+                  <img src="img/testimonials-2.jpg" alt="" />
+                  <h3 class="raleway f-18">Sara Wilsson</h3>
+                  <h4 class="raleway f-14">Designer</h4>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content-box">
+                  <p class="open f-16">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Enim nisi quem export duis labore cillum quae magna enim
+                    sint quorum nulla quem veniam duis minim tempor labore quem
+                    eram duis noster aute amet eram fore quis sint minim.
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="t-img-box">
+                  <img src="img/testimonials-3.jpg" alt="" />
+                  <h3 class="raleway f-18">Jena Karlis</h3>
+                  <h4 class="raleway f-14">Store Owner</h4>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content-box">
+                  <p class="open f-16">
+                    <i class="fa-solid fa-quote-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="t-img-box">
+                  <img src="img/testimonials-4.jpg" alt="" />
+                  <h3 class="raleway f-18">Matt Brandon</h3>
+                  <h4 class="raleway f-14">Freelancer</h4>
+                </div>
+              </div>
+              <div class="item">
+                <div class="content-box">
+                  <p class="open f-16">
+                    <i class="fa-solid fa-quote-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                    <i class="fa-solid fa-quote-right"></i>
+                  </p>
+                </div>
+                <div class="t-img-box">
+                  <img src="img/testimonials-5.jpg" alt="" />
+                  <h3 class="raleway f-18">John Larson</h3>
+                  <h4 class="raleway f-14">Entrepreneur</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Team Section -->
     <section class="Team padding-team">
-        <div class="container">
-            <div class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s">
-                <h1>Team</h1>
-                <p>
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-                    aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-                    quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
-            </div>
-            <div class="team-image wow animate__animated animate__fadeInUp animate__delay-1s">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="team-content">
-                            <img src="img/team-1.jpg" alt="">
-                            <div class="team-info text-align-center">
-                                <h4 class="raleway f-16 text">Walter White</h4>
-                                <p class="open">Chief Executive Officer</p>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="team-content">
-                            <img src="img/team-2.jpg" alt="">
-                            <div class="team-info text-align-center">
-                                <h4 class="raleway f-16 text">Sarah Jhonson</h4>
-                                <p class="open">Product Manager</p>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="team-content">
-                            <img src="img/team-3.jpg" alt="">
-                            <div class="team-info text-align-center">
-                                <h4 class="raleway f-16 text">William Anderson</h4>
-                                <p class="open">CTO</p>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-linkedin"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="u-title text-align-center wow animate__animated animate__fadeIn animate__delay-1s"
+        >
+          <h1>Team</h1>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
         </div>
+        <div
+          class="team-image wow animate__animated animate__fadeInUp animate__delay-1s"
+        >
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="team-content">
+                <img src="img/team-1.jpg" alt="" />
+                <div class="team-info text-align-center">
+                  <h4 class="raleway f-16 text">Walter White</h4>
+                  <p class="open">Chief Executive Officer</p>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="team-content">
+                <img src="img/team-2.jpg" alt="" />
+                <div class="team-info text-align-center">
+                  <h4 class="raleway f-16 text">Sarah Jhonson</h4>
+                  <p class="open">Product Manager</p>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="team-content">
+                <img src="img/team-3.jpg" alt="" />
+                <div class="team-info text-align-center">
+                  <h4 class="raleway f-16 text">William Anderson</h4>
+                  <p class="open">CTO</p>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Contact Section -->
     <section class="contact-section contact-padding">
-        <div class="container wow animate__animated animate__fadeInUp animate__delay-1s">
-            <div class="u-title text-align-center">
-                <h1>Contact</h1>
-                <p>
-                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-                    aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-                    quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="location text-align-center">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <h3 class="raleway">Our Address</h3>
-                            <p class="f-14 open">
-                                A108 Adam Street, New York, NY 535022
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28782.75973997325!2d-74.06323928094213!3d40.6868597259823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sin!4v1679642219269!5m2!1sen!2sin"
-                            width="100%" height="425" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="location text-align-center">
-                                <i class="fa-regular fa-envelope"></i>
-                                <h3 class="raleway">Email Us</h3>
-                                <p class="f-14 open">
-                                    contact@example.com
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="location text-align-center">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <h3 class="raleway">Call Us</h3>
-                                <p class="f-14 open">
-                                    +1 5589 55488 55
-                                </p>
-                            </div>
-                        </div>
-                        <div class="w-100">
-                            <div class="form">
-                                <form action="">
-                                    <div class="row justify-content-between">
-                                        <input type="text" placeholder="Your Name">
-                                        <input type="email" placeholder="Your Email">
-                                        <input type="text" placeholder="Subject">
-                                        <textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea>
-                                    </div>
-                                    <button class="form-btn f-16 open">Send Message</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div
+        class="container wow animate__animated animate__fadeInUp animate__delay-1s"
+      >
+        <div class="u-title text-align-center">
+          <h1>Contact</h1>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
         </div>
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="location text-align-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 class="raleway">Our Address</h3>
+                <p class="f-14 open">A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28782.75973997325!2d-74.06323928094213!3d40.6868597259823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sin!4v1679642219269!5m2!1sen!2sin"
+                width="100%"
+                height="425"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="location text-align-center">
+                  <i class="fa-regular fa-envelope"></i>
+                  <h3 class="raleway">Email Us</h3>
+                  <p class="f-14 open">contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="location text-align-center">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h3 class="raleway">Call Us</h3>
+                  <p class="f-14 open">+1 5589 55488 55</p>
+                </div>
+              </div>
+              <div class="w-100">
+                <div class="form">
+                  <form action="">
+                    <div class="row justify-content-between">
+                      <input type="text" placeholder="Your Name" />
+                      <input type="email" placeholder="Your Email" />
+                      <input type="text" placeholder="Subject" />
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="7"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <button class="form-btn f-16 open">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="container">
-            <div class="f-part-1">
+      <div class="container">
+        <div class="f-part-1">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+              <div class="footer-box text raleway text-align-center">
+                <h2 class="text">Squadfree</h2>
+                <p class="itlx">
+                  Qui repudiandae et eum dolores alias sed ea. Qui suscipit
+                  veniam excepturi quod.
+                </p>
+                <div class="address">
+                  <span class="span">A108 Adam Street</span>
+                  <span>NY 535022, USA</span>
+                  <div class="address-part">
+                    <p class="f-top">
+                      <strong>Phone :</strong> +1 5589 55488 55
+                    </p>
+                    <p><strong>Email :</strong> info@example.com</p>
+                  </div>
+                </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <div class="footer-box text raleway text-align-center">
-                            <h2 class="text">Squadfree</h2>
-                            <p class="itlx  ">Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi
-                                quod.</p>
-                            <div class="address">
-                                <span class="span">A108 Adam Street</span>
-                                <span>NY 535022, USA</span>
-                                <div class="address-part">
-                                    <p class="f-top">
-                                        <strong>Phone :</strong> +1 5589 55488 55
-                                    </p>
-                                    <p>
-                                        <strong>Email :</strong> info@example.com
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="f-icon-box">
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-skype"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-xs-12">
-                        <div class="row">
-                            <div class="links">
-                                <h4 class="raleway white">Useful Links</h4>
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
-                                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> About us</a></li>
-                                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
-                                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Terms of service</a></li>
-                                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Privacy policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-2 col-md-5 col-sm-12 col-xs-12">
-                        <div class="links">
-                            <h4 class="raleway white">Our Services</h4>
-                            <ul>
-                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Web Design</a></li>
-                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Web Development</a></li>
-                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Product Management</a></li>
-                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Marketing</a></li>
-                                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Graphic Design</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-xs-12 padding-12">
-                        <div class="final-section">
-                            <h4 class="raleway white">Our Newsletter</h4>
-                            <p class="f-14 open white">Tamen quem nulla quae legam multos aute sint culpa legam noster
-                                magna</p>
-                            <form action="" class="row">
-                                <input type="text" class="footer-input"><button
-                                    class="footer-btn raleway">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
+                  <div class="f-icon-box">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="f-part-2 text-align-center">
-                <div class="copyright white">
-                    <p class="f-14 open">© Copyright<span> Squadfree</span>. All Rights Reserved</p>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-xs-12">
+              <div class="row">
+                <div class="links">
+                  <h4 class="raleway white">Useful Links</h4>
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevron-right"></i> Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevron-right"></i> About us</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevron-right"></i> Services</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevron-right"></i> Terms of
+                        service</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-chevron-right"></i> Privacy
+                        policy</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <div class="designer">
-                    <p class="white open">Designed by <a href="#" class="header-color">Vedant M Patel</a></p>
-                </div>
+              </div>
             </div>
+            <div class="col-xl-2 col-lg-2 col-md-5 col-sm-12 col-xs-12">
+              <div class="links">
+                <h4 class="raleway white">Our Services</h4>
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-chevron-right"></i> Web Design</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-chevron-right"></i> Web
+                      Development</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-chevron-right"></i> Product
+                      Management</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-chevron-right"></i> Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-chevron-right"></i> Graphic
+                      Design</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-4 col-lg-4 col-md-7 col-sm-12 col-xs-12 padding-12"
+            >
+              <div class="final-section">
+                <h4 class="raleway white">Our Newsletter</h4>
+                <p class="f-14 open white">
+                  Tamen quem nulla quae legam multos aute sint culpa legam
+                  noster magna
+                </p>
+                <form action="" class="row">
+                  <input type="text" class="footer-input" /><button
+                    class="footer-btn raleway"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="f-part-2 text-align-center">
+          <div class="copyright white">
+            <p class="f-14 open">
+              © Copyright<span> Squadfree</span>. All Rights Reserved
+            </p>
+          </div>
+          <div class="designer">
+            <p class="white open">
+              Designed by <a href="#" class="header-color">Vedant M Patel</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-</body>
 
+  <!-- J Query -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  <!-- Owl carousel -->
+    <script>
+      $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          800: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  <!-- Counter js -->
+    <script>
+      (function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+    </script>
+  <!-- Pointer js  -->
+  <script>
+    // UPDATE: I was able to get this working again... Enjoy!
+
+  var cursor = document.querySelector('.cursor');
+  var cursorinner = document.querySelector('.cursor2');
+  var a = document.querySelectorAll('a');
+
+  document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+  });
+
+  document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    cursorinner.style.left = x + 'px';
+    cursorinner.style.top = y + 'px';
+  });
+
+  document.addEventListener('mousedown', function(){
+    cursor.classList.add('click');
+    cursorinner.classList.add('cursorinnerhover')
+  });
+
+  document.addEventListener('mouseup', function(){
+    cursor.classList.remove('click')
+    cursorinner.classList.remove('cursorinnerhover')
+  });
+
+  a.forEach(item => {
+    item.addEventListener('mouseover', () => {
+      cursor.classList.add('hover');
+    });
+    item.addEventListener('mouseleave', () => {
+      cursor.classList.remove('hover');
+    });
+  })
+  </script>
+  </body>
 </html>

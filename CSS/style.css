@@ -625,6 +625,19 @@ html{
     width: 90px;
     height: 90px;
     border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.owl-stage-outer{
+    padding: 20px 2px;
+}
+.owl-theme .owl-dots .owl-dot span{
+    border: 1px solid var(--head);
+    background: none;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: var(--head);
 }
 .Testimonials-section .t-img-box{
     padding: 45px 0;
@@ -889,3 +902,61 @@ html{
     font-size: 14px;
     /* font-weight: 00; */
 }
+
+/* Setting-box */
+
+.setting-box{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0,0.5);
+    top: 40%;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+    z-index: 9999;
+}
+.setting-box i{
+    color: var(--head);
+    line-height: 40px;
+}
+
+/* Pointer js */
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
+  
+  .hover {
+    background-color: red;
+    opacity: 0.5;
+  }
+  
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
