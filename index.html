@@ -902,14 +902,28 @@
         </div>
       </div>
     </footer>
-
     <!-- J Query -->
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/counter.min.js"></script>
     <script src="js/owl.carousel.js"></script>
+    
+    <!-- Header fixed-->
     <script>
+      $(window).scroll(function(){
+        if($(window).scrollTop()>500){
+          $('header').addClass('fixed');
+          $('.btp').fadeIn();
+        }
+        else{
+          $('header').removeClass('fixed');
+          $('.btp').fadeOut();
+        }
+      })
+    </script>
+    <!-- Wow Js -->
+   <script>
       new WOW().init();
     </script>
     <!-- Owl carousel -->
@@ -942,7 +956,7 @@
       var counter = 0;
       $(window).scroll(function () {
         var scrollPosition = $(window).scrollTop();
-        if (scrollPosition > 1000 && counter < 10) {
+        if (scrollPosition > 1300 && counter < 10) {
           counter++;
           function visible(partial) {
             var $t = partial,
