@@ -22,13 +22,34 @@
     .toggle-menu i{
         display: block;
     }
-    header nav{
-        display: none;
-    }
+   
     .team-content{
         padding: 30px 0;
     }
-
+    
+    header nav ul{
+        position: absolute;
+        flex-direction: column;
+        transform: scaleY(0);
+        top: 70px;
+        transform-origin: top;
+        transition: all 0.5s;
+        background-color: white;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        line-height: 3;
+    }
+    header nav ul li a{
+        color: #2F4D5A;
+    }
+    header nav ul li a:hover{
+        color: var(--head);
+    }
+    .show ul {
+        transform: scaleZ(1);
+    }
 }
 @media (min-width:576px){
     /* sm */
@@ -46,13 +67,33 @@
     .col-sm-12{width: 100%;}
 
     .container{
-        width: 540px;
+        max-width: 540px;
     }
     .toggle-menu i{
         display: block;
     }
-    header nav{
-        display: none;
+    header nav ul{
+        position: absolute;
+        flex-direction: column;
+        transform: scaleY(0);
+        top: 70px;
+        transform-origin: top;
+        transition: all 0.5s;
+        background-color: white;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        line-height: 3;
+    }
+    header nav ul li a{
+        color: #2F4D5A;
+    }
+    header nav ul li a:hover{
+        color: var(--head);
+    }
+    .show ul {
+        transform: scaleZ(1);
     }
 }
 @media (min-width:768px){
@@ -71,14 +112,38 @@
     .col-md-12{width: 100%;}
 
     .container{
-        width: 720px;
+        max-width: 720px;
     }
     .toggle-menu i{
         display: block;
     }
-    header nav{
-        display: none;
+    section{
+        overflow:hidden;
     }
+    header nav ul{
+        position: absolute;
+        flex-direction: column;
+        transform: scaleY(0);
+        top: 70px;
+        transform-origin: top;
+        transition: all 0.5s;
+        background-color: white;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        line-height: 3;
+    }
+    header nav ul li a{
+        color: #2F4D5A;
+    }
+    header nav ul li a:hover{
+        color: var(--head);
+    }
+    .show ul {
+        transform: scaleZ(1);
+    }
+
 }
 @media (min-width:992px){
     /* lg */
@@ -96,7 +161,7 @@
     .col-lg-12{width: 100%;}
 
     .container{
-        width: 960px;
+        max-width: 960px;
     }
     .final-section .footer-input{
         padding: 15px 7px;
@@ -104,9 +169,31 @@
     .toggle-menu i{
         display: block;
     }
-    header nav{
-        display: none;
+    
+    header nav ul{
+        position: absolute;
+        flex-direction: column;
+        transform: scaleY(0);
+        top: 70px;
+        transform-origin: top;
+        transition: all 0.5s;
+        background-color: white;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        line-height: 3;
     }
+    header nav ul li a{
+        color: #2F4D5A;
+    }
+    header nav ul li a:hover{
+        color: var(--head);
+    }
+    .show ul {
+        transform: scaleZ(1);
+    }
+
 }
 @media (min-width:1200px){
     /* xl */
@@ -124,29 +211,65 @@
     .col-xl-12{width: 100%;}
     
     .container{
-        width: 1140px;
+        max-width: 1140px;
     }
     header .Dropdown li a{
         transition: all 0.5s;
+        padding: 0px 20px;
     }
     header  .Dropdown li:hover a{
         visibility: visible;
         opacity: 1;
         top: 55px;
     }
-    .megamenu a{
+    .megamenu ul li a{
         transition: all 0.5s;
+        padding: 0 20px;
     }
     header ul li .megamenu li:hover > a{
         color: var(--head);
     }
-    header nav{
-        display: block;
-    }
     .toggle-menu i{
         display: none;
     }
+    header nav ul{
+        position: static;
+        flex-direction: row;
+        transform: scaleY(1);
+        transition: all 0.5s;
+        width: 100%;
+        background: transparent;
+    }
+    header nav ul li a{
+        color: white;
+    }
+    header nav ul li a:hover{
+        color: var(--head);
+    }
+    header .Dropdown{
+        position: absolute;
+        width: 200px;
+        left: 30%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s;
+        background-color: var(--white);
+    }
+    .megamenu{
+        width: 1140px;
+        position: absolute;
+        background-color: var(--white);
+        left: -200px;
+        right: 0;
+        margin: auto;
+        top: 120px;
+        border-radius: 5px;
+        transition: all 0.5s;
+        visibility: hidden;
+        opacity: 0;
+    }
 }
+
 
 .col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12{
     padding: 15px;

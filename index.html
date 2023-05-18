@@ -33,9 +33,7 @@
           <div class="logo">
             <a href="#" class="open white"><span>SQUADFREE</span></a>
           </div>
-          <div class="toggle-menu">
-            <i class="fa-solid fa-bars"></i>
-          </div>
+         
           <nav>
             <ul class="row raleway f-16">
               <li><a href="#">home</a></li>
@@ -133,6 +131,9 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
+          <div class="toggle-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </div>
     </header>
@@ -922,6 +923,13 @@
         }
       })
     </script>
+    <script>
+       $(document).ready(function(){
+        $(".toggle-menu").click(function(){
+          $("header").toggleClass("show")
+        })
+      })
+    </script>
     <!-- Wow Js -->
    <script>
       new WOW().init();
@@ -1038,5 +1046,7 @@
         });
       });
     </script>
+    <!-- headline js -->
+    <script></script>
   </body>
 </html>
