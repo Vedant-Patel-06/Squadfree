@@ -1,5 +1,5 @@
 # Squadfree
-
+<img src="https://vportfolio.pages.dev/img/Squadfree%201.png"/>
 This repository contains the code for a responsive website built using HTML, CSS, Media Query, jQuery, Animate.css, and Wow.js. It showcases various features and animations to create an engaging user experience.
 
 # Features
